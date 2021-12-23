@@ -1,12 +1,12 @@
 {
-  "name": "Open PWA",
-  "short_name": "Open PWA",
+  "name": "VacunatePBA",
+  "short_name": "VacunatePBA",
   "start_url": "./",
   "scope": ".",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#640700",
+  "theme_color": "#4d96a7",
   "newBranch":"true",
   "icons": [
     {
