@@ -1,100 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Open Github PWA is a template for building PWA with github pages">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Open Github PWA is a template for building PWA with github pages"
+    />
 
     <!--Social meta-->
     <meta property="og:title" content="Open Github PWA" />
     <meta property="og:url" content="" />
-    <meta property="og:description"
-        content="This is a PWA boilerplate, with cache busting mechanism and preconfigured Github Pages deployment" />
+    <meta
+      property="og:description"
+      content="This is a PWA boilerplate, with cache busting mechanism and preconfigured Github Pages deployment"
+    />
     <meta property="og:image" content="/assets/icons/icon.png" />
     <meta property="og:type" content="website" />
     <!---->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/icon.png"
+    />
     <link rel="icon" type="image/png" href="assets/icons/icon.png" />
 
-
-    <meta name="theme-color" content="#640700">
-    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#640700" />
+    <link rel="manifest" href="manifest.json" />
     <!---->
 
     <!---->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
     <title>Open Github PWA</title>
-</head>
+  </head>
 
-<body>
-    <div id="appContainer" class="container">
-        <header>
-            <h1> Open Github PWA </h1>
-            <div id="version">
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#">Mis Vacunas</a>
 
-            </div>
-        </header>
-        <div class="body">
+        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
 
-            <p>
-                This is a PWA , deployed using Github Pages (Free and Awesome) with cache bust mechanism.
-            </p>
-            <p>
-                Build your own pwa in 2 mins, follow the bellow steps
-            </p>
-            <ol>
-                <li>Fork this project on github</li>
-                <li>Enable github pages option</li>
-                <li>Done!! access your github pages url</li>
-            </ol>
-            <p>
-                Check <a href="https://github.com/PranoySarkar/OpenPWA">here </a>  for more information 
-            </p>
-            <p>
-                At the beginning it might take some time to deploy, if it shows 404 wait for 5 mins.
-            </p>
-            <p>
-                If you dont see the download button bollow then delete the previous install.
-            </p>
-            <p>
-                <a href="https://pranoysarkar.github.io/OpenPWA/">Open in APP </a>
-            </p>
-
-            <div class="controllers">
-                <div class="downloadPrompt">
-                    <div class="promptControllers">
-                        <button class="downloadButton">Download </button>
-                    </div>
-                </div>
-            </div>
-            <footer>
-            </footer>
-
-            <div class="hiddenElements">
-            </div>
-
-
+    <ul class="sidenav" id="mobile-nav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img alt="fondo" src="assets/icons/color-fondo.png" />
+          </div>
+          <br />
+          <div>
+            <a href="#name"
+              ><span class="white-text name">Francisco Etcheverri</span></a
+            >
+            <a href="#name"><span class="white-text name">38955346</span></a>
+          </div>
+          <br />
         </div>
-    </div>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">home</i>Inicio</a>
+      </li>
+      <li>
+        <a href="#!"
+          ><i class="material-icons">perm_contact_calendar</i>Mis datos</a
+        >
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">event</i>Mis turnos</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">colorize</i>Mis vacunas</a>
+      </li>
+      <li>
+        <a href="#!"
+          ><i class="material-icons">task_alt</i>Certificado de Vacunacion</a
+        >
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">restart_alt</i>Seguimientos</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">output</i>Cerrar Session</a>
+      </li>
+    </ul>
 
-    <div class="bigFullScreen">
-
-    </div>
+    <div class="bigFullScreen"></div>
     <script type="text/javascript">
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker
-                .register(`service-worker.js`)
-                .then(function () {
-                    console.log("Service Worker Registered");
-                });
-        }
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register(`service-worker.js`).then(function () {
+          console.log("Service Worker Registered");
+        });
+      }
     </script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script defer src="js/settings.js"></script>
     <script defer src="js/install-handler.js"></script>
     <script defer src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

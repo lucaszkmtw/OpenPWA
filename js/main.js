@@ -5,10 +5,6 @@ window.addEventListener('load',main)
 function main(){
 
     vaildateCacheIfOnline()
-    .then(_=>{
-        
-    })
-
 }
 
 

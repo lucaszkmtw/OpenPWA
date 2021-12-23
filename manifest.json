@@ -1,7 +1,7 @@
 {
   "name": "Open PWA",
   "short_name": "Open PWA",
-  "start_url": "./", 
+  "start_url": "./",
   "scope": ".",
   "display": "standalone",
   "orientation": "portrait",

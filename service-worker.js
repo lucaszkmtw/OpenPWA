@@ -8,7 +8,12 @@ let filesToCache = [
   "js/settings.js",
   "css/main.css",
   "assets/icons/icon.png",
-  "manifest.json"
+  "manifest.json",
+  "assets/icons/color-fondo.png",
+  "css/materialize.min.css",
+  "css/styles.css",
+  "js/materialize.min.js",
+  "js/script.js"
   // add your assets here 
   // ❗️❕donot add config.json here ❗️❕
 ];
