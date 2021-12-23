@@ -4,18 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="VacunatePBA"
-    />
+    <meta name="description" content="VacunatePBA" />
 
     <!--Social meta-->
     <meta property="og:title" content="Open Github PWA" />
     <meta property="og:url" content="" />
-    <meta
-      property="og:description"
-      content="VacunatePBA"
-    />
+    <meta property="og:description" content="VacunatePBA" />
     <meta property="og:image" content="/assets/icons/icon.png" />
     <meta property="og:type" content="website" />
     <!---->
@@ -48,6 +42,22 @@
       href="css/materialize.min.css"
       media="screen,projection"
     />
+
+    <style>
+      .contenedor {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .datos {
+        position: absolute;
+        top: 51%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
     <title>Open Github PWA</title>
   </head>
 
@@ -61,8 +71,19 @@
         </a>
       </div>
     </nav>
-    <img src="assets/icons/certificado.png" alt="certifiacado" style="width: 100%;">
-
+    <img
+      src="assets/icons/certificado_template.png"
+      alt="certifiacado"
+      style="width: 100%"
+      class="contenedor"
+    />
+    <div class="datos" style="color: black !important;">
+      <b>Etcheverri</b> <br/>
+      <b>Francisco</b>
+      <div style="padding-top: 75%;">
+        <b>38955346</b>
+      </div>
+    </div>
 
     <ul class="sidenav" id="mobile-nav">
       <li>
