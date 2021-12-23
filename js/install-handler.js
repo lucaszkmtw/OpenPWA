@@ -19,7 +19,7 @@ function downloadButtonClicked() {
 window.addEventListener("beforeinstallprompt", function (event) {
   event.preventDefault();
   deferredInstallPrompt = event;
-  showDownloadPrompt();
+  //showDownloadPrompt();
 });
 
 window.addEventListener("appinstalled", (evt) => {
