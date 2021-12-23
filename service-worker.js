@@ -13,7 +13,8 @@ let filesToCache = [
   "css/materialize.min.css",
   "css/styles.css",
   "js/materialize.min.js",
-  "js/script.js"
+  "js/script.js",
+  "assets/icons/certificado.png"
   // add your assets here 
   // ❗️❕donot add config.json here ❗️❕
 ];
