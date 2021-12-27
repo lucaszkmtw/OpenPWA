@@ -3,26 +3,27 @@ let cacheName = "OpenGithubPWA";// 👈 any unique name
 let filesToCache = [
   "/OpenPWA/", // 👈 your repository name , both slash are important
   "service-worker.js",
+  "manifest.json",
   "js/main.js",
   "js/install-handler.js",
   "js/settings.js",
-  "css/main.css",
-  "assets/icons/icon.png",
-  "manifest.json",
-  "assets/icons/color-fondo.png",
-  "css/materialize.min.css",
-  "css/styles.css",
   "js/materialize.min.js",
   "js/script.js",
-  "assets/icons/certificado_template.png"
-  // add your assets here 
-  // ❗️❕donot add config.json here ❗️❕
+  "css/main.css",
+  "css/materialize.min.css",
+  "css/styles.css",
+  "assets/icons/atendido.png",
+  "assets/icons/banner_up.png",
+  "assets/icons/color-fondo.png",
+  "assets/icons/footer_fechas.png",
+  "assets/icons/icon.png",
+  "assets/icons/qr.png",
 ];
 
 self.addEventListener("install", function (event) {
   event.waitUntil(caches.open(cacheName).then((cache) => {
     console.log('installed successfully')
-    return cache.addAll(filesToCache);
+    return cache.addAll(filesToCache)
   }));
 });
 
