@@ -21,7 +21,7 @@ let filesToCache = [
     "assets/icons/qr.png",
     "/index.html",
     "/index2.html",
-
+    "/scripts/require.js",
 ];
 
 self.addEventListener("install", function(event) {

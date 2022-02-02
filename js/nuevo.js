@@ -18,9 +18,14 @@ function change_text() {
 
 
     var jsonData = JSON.stringify(data);
-    console.log(jsonData)
+    
+    
+    var nomb =  window.localStorage.setItem('nombre', nombre);
+    var ape =    window.localStorage.setItem('apellido', apellido);
+    var doc =    window.localStorage.setItem('dni', dni);
 
-
-
+    console.log(window.localStorage.getItem('nombre'));
+    console.log(window.localStorage.getItem('apellido'));
+    console.log(window.localStorage.getItem('dni'));
 
 }
