@@ -19,8 +19,9 @@ let filesToCache = [
     "assets/icons/footer_fechas.png",
     "assets/icons/icon.png",
     "assets/icons/qr.png",
-    "/index.html",
-    "/index2.html",
+    "js/nuevo.js",
+    "js/vacunas.js",
+    "js/certificado.js",
     "/scripts/require.js",
 ];
 
