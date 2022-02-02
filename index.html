@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -14,12 +15,7 @@
     <meta property="og:type" content="website" />
     <!---->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/icon.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon.png" />
     <link rel="icon" type="image/png" href="assets/icons/icon.png" />
 
     <meta name="theme-color" content="#640700" />
@@ -28,116 +24,89 @@
 
     <!---->
     <link rel="stylesheet" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" crossorigin="anonymous" />
 
     <link href="css/styles.css" rel="stylesheet" />
     <!--Import materialize.css-->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
-    />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <title>Open Github PWA</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <nav>
-      <div class="nav-wrapper">
-        <a href="#" style="font-size: larger;">Certificado de vacunación</a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-          <i class="material-icons">menu</i>
-        </a>
-      </div>
+        <div class="nav-wrapper">
+            <a href="#" style="font-size: larger;">Certificado de vacunación</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
     </nav>
-    <img
-      src="assets/icons/banner_up.png"
-      alt="certifiacado"
-      style="width: 100%"
-      class="contenedor"
-    />
+    <img src="assets/icons/banner_up.png" alt="certifiacado" style="width: 100%" class="contenedor" />
     <div style="padding-left:20px; margin-top:20px; color:black !important;">
-      Nombre y apellido <br/>
-      <b>Noirat</b> <br/>
-      <b>Lucas</b>
-      <br/>
-      <br/>
-      <br/>
-      Documento <br/>
-      <b>38955332</b>
+        Nombre y apellido <br/>
+        <b id="apellidob">Noirat</b> <br/>
+        <b id="nombreb">Lucas</b>
+        <br/>
+        <br/>
+        <br/> Documento <br/>
+        <b id="dnib">38955332</b>
     </div>
 
-    <img
-      src="assets/icons/qr.png"
-      alt="certifiacado"
-      style="width: 150px; float:right; margin-top: -150px; padding-bottom: 50px; padding-right: 20px;"
-      class="contenedor"
-    />
-    <img
-      src="assets/icons/footer_fechas.png"
-      alt="certifiacado"
-      style="width: 100%"
-      class="contenedor"
-    />
+    <img src="assets/icons/qr.png" alt="certifiacado" style="width: 150px; float:right; margin-top: -150px; padding-bottom: 50px; padding-right: 20px;" class="contenedor" />
+    <img src="assets/icons/footer_fechas.png" alt="certifiacado" style="width: 100%" class="contenedor" />
     <ul class="sidenav" id="mobile-nav">
-      <li>
-        <div class="user-view">
-          <div class="background">
-            <img alt="fondo" src="assets/icons/color-fondo.png" />
-          </div>
-          <br />
-          <div>
-            <a href="#name"
-              ><span class="white-text name">Lucas Noirat</span></a
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img alt="fondo" src="assets/icons/color-fondo.png" />
+                </div>
+                <br />
+                <div>
+                    <a href="#name"><span class="white-text name">Lucas Noirat</span></a
             >
             <a href="#name"><span class="white-text name">38955332</span></a>
-          </div>
-          <br />
-        </div>
-      </li>
-      <li>
-        <a href="/index2.html"><i class="material-icons">home</i>Inicio</a>
-      </li>
-      <li>
-        <a href="#!"
-          ><i class="material-icons">perm_contact_calendar</i>Mis datos</a
+                </div>
+                <br />
+            </div>
+        </li>
+        <li>
+            <a href="/index2.html"><i class="material-icons">home</i>Inicio</a>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">perm_contact_calendar</i>Mis datos</a
         >
       </li>
       <li>
         <a href="#!"><i class="material-icons">event</i>Mis turnos</a>
-      </li>
-      <li>
-        <a href="index2.html"><i class="material-icons">colorize</i>Mis vacunas</a>
-      </li>
-      <li>
-        <a href="index.html"
-          ><i class="material-icons">task_alt</i>Certificado de Vacunacion</a
+        </li>
+        <li>
+            <a href="index2.html"><i class="material-icons">colorize</i>Mis vacunas</a>
+        </li>
+        <li>
+            <a href="index.html"><i class="material-icons">task_alt</i>Certificado de Vacunacion</a
         >
       </li>
       <li>
         <a href="#!"><i class="material-icons">restart_alt</i>Seguimientos</a>
-      </li>
-      <li>
-        <a href="#!"><i class="material-icons">output</i>Cerrar Session</a>
-      </li>
+        </li>
+        <li>
+            <a href="index3.html"><i class="material-icons">output</i>Cerrar Session</a>
+        </li>
     </ul>
 
     <div class="bigFullScreen"></div>
     <script type="text/javascript">
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register(`service-worker.js`).then(function () {
-          console.log("Service Worker Registered");
-        });
-      }
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register(`service-worker.js`).then(function() {
+                console.log("Service Worker Registered");
+            });
+        }
     </script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script defer src="js/settings.js"></script>
     <script defer src="js/install-handler.js"></script>
     <script defer src="js/main.js"></script>
-  </body>
+</body>
+
 </html>

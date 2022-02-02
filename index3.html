@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="VacunatePBA" />
+
+    <!--Social meta-->
+    <meta property="og:title" content="Open Github PWA" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="VacunatePBA" />
+    <meta property="og:image" content="/assets/icons/icon.png" />
+    <meta property="og:type" content="website" />
+    <!---->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon.png" />
+    <link rel="icon" type="image/png" href="assets/icons/icon.png" />
+
+    <meta name="theme-color" content="#640700" />
+    <link rel="manifest" href="manifest.json" />
+    <!---->
+
+    <!---->
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" crossorigin="anonymous" />
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <title>Open Github PWA</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" style="font-size: larger;">Certificado de vacunación</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+    </nav>
+    <!-- parte de adentro -->
+
+
+
+
+
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <br>
+                <br>
+                <div class="input-field col s6">
+                    <input placeholder="nombre" id="first_name" type="text" class="validate" name="first_name">
+                    <label for="first_name">Nombre</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate" name="last_name">
+                    <label for="last_name">Apellido</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="dni" type="text" class="validate" name="dni">
+                    <label for="dni">documento</label>
+                </div>
+                <a class="waves-effect waves-light btn" id="botonsito" onclick="change_text()">Cambiar</a>
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+
+    <ul class="sidenav " id="mobile-nav">
+        <li>
+            <div class="user-view ">
+                <div class="background ">
+                    <img alt="fondo " src="assets/icons/color-fondo.png " />
+                </div>
+                <br />
+                <div>
+                    <a href="#name "><span class="white-text name" name="spam_nombre" id ="spam_nombre"></span></a
+            >
+            <a href="#name "><span class="white-text name " name="spam_dni" id="spam_dni" ></span></a>
+                </div>
+                <br />
+            </div>
+        </li>
+        <li>
+            <a href="/index2.html "><i class="material-icons ">home</i>Inicio</a>
+        </li>
+        <li>
+            <a href="#! "><i class="material-icons ">perm_contact_calendar</i>Mis datos</a
+        >
+      </li>
+      <li>
+        <a href="#! "><i class="material-icons ">event</i>Mis turnos</a>
+        </li>
+        <li>
+            <a href="index2.html"><i class="material-icons ">colorize</i>Mis vacunas</a>
+        </li>
+        <li>
+            <a href="index.html"><i class="material-icons ">task_alt</i>Certificado de Vacunacion</a
+        >
+      </li>
+      <li>
+        <a href="#! "><i class="material-icons ">restart_alt</i>Seguimientos</a>
+        </li>
+        <li>
+            <a href="index3.html"><i class="material-icons ">output</i>Cerrar Session</a>
+        </li>
+    </ul>
+
+    <div class="bigFullScreen "></div>
+    <script type="text/javascript">
+        function change_text() {
+            nombre = document.querySelector('[name="first_name"]').value;
+            apellido = document.querySelector('[name="last_name"]').value;
+            dni = document.querySelector('[name="dni"]').value;
+            // console.log(nombre, apellido, dni)
+
+
+
+            document.getElementById('spam_dni').innerHTML = dni;
+            document.getElementById('spam_nombre').innerHTML = nombre + apellido;
+        }
+    </script>
+
+
+
+
+
+
+
+    <script type="text/javascript " src="js/materialize.min.js "></script>
+    <script type="text/javascript " src="js/script.js "></script>
+    <script defer src="js/settings.js "></script>
+    <script defer src="js/install-handler.js "></script>
+    <script defer src="js/main.js "></script>
+    <script type="text/javascript " src="js/nuevo.js"></script>
+
+
+</body>
+
+</html>
