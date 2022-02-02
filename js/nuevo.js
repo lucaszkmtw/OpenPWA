@@ -10,4 +10,17 @@ function change_text() {
     document.getElementById('spam_nombre').innerHTML = nombre + apellido;
 
 
+    var data = {
+        name: nombre,
+        apellido: apellido,
+        dni: dni,
+    }
+
+
+    var jsonData = JSON.stringify(data);
+    console.log(jsonData)
+
+
+
+
 }
