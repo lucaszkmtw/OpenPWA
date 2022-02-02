@@ -10,5 +10,5 @@ var dni = window.localStorage.getItem('dni')
 
 
 
-document.getElementById('spamnombre').innerHTML = nombre + ' ' +  apellido ;
+document.getElementById('spamnombre').innerHTML = apellido + ' ' +  nombre ;
 document.getElementById('spamdni').innerHTML = dni ;
